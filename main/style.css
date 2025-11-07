@@ -1,0 +1,240 @@
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-image: url('./Assets/latarbelakang.png');
+                    background-repeat: no-repeat; /* Optional: Prevents image from repeating */
+                    background-size: cover; /* Optional: Scales image to cover the entire element */
+                    color: white;
+                    overflow-x: hidden;
+                }
+
+                .navbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 50px;
+                    background: rgba(255, 255, 255, 0.05);
+                    backdrop-filter: blur(10px);
+                }
+
+                .logo {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                .nav-links {
+                    display: flex;
+                    gap: 40px;
+                    list-style: none;
+                }
+
+                .nav-links a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: color 0.3s;
+                }
+
+                .nav-links a:hover {
+                    color: #6b8afd;
+                }
+
+                .hero {
+                    text-align: center;
+                    padding: 100px 50px;
+                    position: relative;
+                }
+
+                .hero h1 {
+                    font-size: 120px;
+                    font-weight: 900;
+                    background: linear-gradient(90deg, #ffffff 0%, #6b8afd 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    letter-spacing: 10px;
+                    margin-bottom: 20px;
+                    text-shadow: 0 0 80px rgba(107, 138, 253, 0.5);
+                }
+
+                .section {
+                    padding: 80px 50px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .what-section {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 60px;
+                    align-items: center;
+                }
+
+                .icon-container {
+                    background: rgba(107, 138, 253, 0.1);
+                    border: 2px solid rgba(107, 138, 253, 0.3);
+                    border-radius: 20px;
+                    padding: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                }
+
+                .camera-icon {
+                    
+                }
+
+            
+
+                .content h2 {
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                    font-weight: 800;
+                }
+
+                .content p {
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: rgba(255, 255, 255, 0.8);
+                    margin-bottom: 15px;
+                }
+
+                .bph-section {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 60px;
+                    align-items: center;
+                    background: rgba(107, 138, 253, 0.05);
+                    border-radius: 30px;
+                    padding: 60px;
+                }
+
+                .screen-mockup {
+                    background: rgba(20, 20, 60, 0.5);
+                    border: 2px solid rgba(107, 138, 253, 0.3);
+                    border-radius: 20px;
+                    padding: 40px;
+                    min-height: 300px;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .screen-mockup::before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    height: 30px;
+                    background: rgba(107, 138, 253, 0.1);
+                    border-radius: 10px;
+                }
+
+                .bph-content h2 {
+                    font-size: 64px;
+                    font-weight: 900;
+                    margin-bottom: 20px;
+                    background: linear-gradient(90deg, #ffffff 0%, #6b8afd 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .divisi-section {
+                    text-align: center;
+                }
+
+                .divisi-section h2 {
+                    font-size: 64px;
+                    font-weight: 900;
+                    margin-bottom: 60px;
+                }
+
+                .divisi-cards {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    flex-wrap: wrap;
+                }
+
+                .divisi-card {
+                    background: rgba(107, 138, 253, 0.1);
+                    border: 2px solid rgba(107, 138, 253, 0.3);
+                    border-radius: 20px;
+                    padding: 40px 60px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                }
+
+                .divisi-card:hover {
+                    background: rgba(107, 138, 253, 0.2);
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 30px rgba(107, 138, 253, 0.3);
+                }
+
+                .divisi-info {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 40px;
+                    margin-top: 60px;
+                    text-align: left;
+                }
+
+                .info-box {
+                    background: rgba(20, 20, 60, 0.5);
+                    border: 2px solid rgba(107, 138, 253, 0.3);
+                    border-radius: 15px;
+                    padding: 30px;
+                }
+
+                .info-box h3 {
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                    color: #6b8afd;
+                }
+
+                @media (max-width: 968px) {
+                    .hero h1 {
+                        font-size: 80px;
+                    }
+
+                    .what-section,
+                    .bph-section,
+                    .divisi-info {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .navbar {
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+
+                    .nav-links {
+                        gap: 20px;
+                    }
+                }
+
+                @media (max-width: 568px) {
+                    .hero h1 {
+                        font-size: 50px;
+                        letter-spacing: 5px;
+                    }
+
+                    .content h2,
+                    .bph-content h2,
+                    .divisi-section h2 {
+                        font-size: 36px;
+                    }
+
+                    .divisi-cards {
+                        flex-direction: column;
+                    }
+                }
